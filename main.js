@@ -63,7 +63,7 @@ function getRandomItem(array) {
 
 function getSentence(event, arr) {
     event.preventDefault()
-    var randomDish = ""
+    var randomDish = "";
 
     if (arr === side) {
         randomDish = getRandomItem(side)
@@ -87,7 +87,7 @@ function getSentence(event, arr) {
 function makeRandomDish(event) {
     event.preventDefault()
 
-    let array = null
+    var selectedArray = null
 
     if (sideBtn.checked) {
         array = side
@@ -103,9 +103,9 @@ function makeRandomDish(event) {
         return
     }
 
-    getSentence(event, selectedArray);
-    clearPot(event);
-    clearBtn.classList.remove('hidden');
+    getSentence(event, array);
+    clearPot(event)
+    clearBtn.classList.remove('hidden')
 }
 
  function showSentence(event) {
