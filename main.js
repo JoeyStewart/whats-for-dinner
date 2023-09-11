@@ -57,25 +57,31 @@ function getRandomIndex(arr) {
     return Math.floor(Math.random() * arr.length)
 }
 
+function getRandomItem(array) {
+    return array[getRandomIndex(array)];
+}
+
 function getSentence(event, arr) {
-    event.preventDefault()
-    var randomDish = ""
+    event.preventDefault();
+    var randomDish = "";
+
     if (arr === side) {
-        randomDish = side[getRandomIndex(side)]
+        randomDish = getRandomItem(side);
     } else if (arr === mainDish) {
-        randomDish = mainDish[getRandomIndex(mainDish)]
+        randomDish = getRandomItem(mainDish);
     } else if (arr === dessert) {
-        randomDish = dessert[getRandomIndex(dessert)]
+        randomDish = getRandomItem(dessert);
     } else if (arr === meals) {
-        var randomMainDish = mainDish[getRandomIndex(mainDish)]
-        var randomSide = side[getRandomIndex(side)]
-        var randomDessert = dessert[getRandomIndex(dessert)]
-        randomDish = `${randomMainDish} with a side of ${randomSide} and ${randomDessert} for dessert!`
-    } 
+        var randomMainDish = getRandomItem(mainDish);
+        var randomSide = getRandomItem(side);
+        var randomDessert = getRandomItem(dessert);
+        randomDish = `${randomMainDish} with a side of ${randomSide} and ${randomDessert} for dessert!`;
+    }
+
     newText.innerHTML = `<section class="prompt">
-    <h3>You should make</h3>
-    <h1>${randomDish}!</h1>
-    </section>`; 
+        <h3>You should make</h3>
+        <h1>${randomDish}!</h1>
+    </section>`;
 }
     
 function makeRandomDish(event) {
