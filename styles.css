@@ -7,217 +7,71 @@ grey - #95a5a6;
 red - #ee5253
 
 */ /*
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-input, 
-button, 
-textarea {
-    font: inherit;
-}
- 
-/* Variables */
-
-/* :root {
-    font-family: 'Roboto', sans-serif;
-    font-size: clamp(1rem, 2.2vh, 1.5rem);
-    background: #0fb9b1;
-} */
-
-/* Utilities */ /*
-.nowrap{
-    white-space: nowrap;
-}
-
-.center {
-    text-align: center;
-}
-
-/* styles */ /*
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    height: 100%;
-    width: 100%;
-    background-image: url("./assets/burger-friends.jpg");
-    display: flex;
-    justify-content: space-between;
-}
 /* margin: 0possible change*/
 
 
 /* Header */
-
-/*
-.header__btn {
-    margin-left: 1800;
-}
-
-.blueHeader{
-        background-color:#0fb9b1;
-        padding: 10px; 
-        font-family: 'Roboto', sans-serif;
-        font-size: 20px;
-        font-weight: bold;
-        height: 40px;
-        display: flex; 
-        justify-content: space-between;
-        align-items center; 
-    } 
-/*
-.meal {
-    background-color: rgba(225, 225, 225, .9);
-    justify-content: center;
-    align-items: center;
-    margin-top: 55px;
-    margin-right: 15px;
-    margin-left: 100px;
-    width: 50%;
-    height: auto;
-} 
-.meal h2::after {
-    content:"*";
-
-    color:red;
-    position: absolute;
-}
- .header__meal {
-    
- }
-
- .meal__li {
-    padding-left: ;
-}
-
-.btn {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    justify-content: space-around;
-}
-
- .display {
-    height: 100vh;
-    width: 100vw;
- }
-
- .display_image {
-    height: 100%;
-    width: 100%;
- }
-
-.blocks{
-    display: flex;
-    justify-content: space-evenly ; 
-}
-
-.pot__image {
-    width: 100px;
-    height: 100%;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(225, 225, 225, .9);
-}
-
-*/
-
-
-
-
-
-
-    /* body {
-    background: burlywood;
-    
-  }
-
-  h1 {
-    background: greenyellow
-}
-button {
-   background: blueviolet 
-}
-  
-  section {
-    align-items: center;
-    background: whitesmoke;
-    font-size: 10px;
-    padding: px px;
-    height: 60px
-    
-  } */
-
-  .header { /*creating a class selector for that specific section to set CSS styles onto it*/
+  .header { 
     background-color:#0fb9b1;
     padding: 10px; 
+    height: 40px;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    height: 40px;
-    display: flex; /* Use flexbox to control layout */
-    justify-content: space-between;/* Spread items horizontally */
-    align-items: center; /* Center items vertically */
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
 }
 
 .header__btn {
     background-color: rgba(225, 225, 225, .9);
+    height: 35px;
+    width: 115px;
     border: none;
     border-radius: 8px;
-    width: 115px;
-    height: 35px
+    
 }
+
 body {
+    height: 100%;
+    width: 100%;
     margin: 0;
     background-image: url("./assets/burger-friends.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
 }
 
 .new__meal {
+    background-color: rgba(225, 225, 225, .9);
+    opacity: 0.9;
     margin-top: 55px;
     margin-right: 15px;
     margin-left: 100px;
-    width: 50%;
-    height: auto; 
-    /* the element will automatically adjust its height to allow its content to be displayed correctl */
+    height: auto;
+    width: 50%; 
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 20px;
-    background-color: rgba(225, 225, 225, .9);
-    opacity: 0.9;
     display: flex;
     flex-direction: column;
 }
 
-/* read top and down so that's why I put h3 after left-section */
 .new__meal h2 {
+    padding-top: 40px;
+    padding-left: 40px;
     font-weight: bold;
     text-align: left;
     font-weight: bold;
-    padding-top: 40px;
-    padding-left: 40px;
-    /* align-items: center */
+   
 }
 
 .new__meal h2::after {
-    content: "*"; /* display an aserick */
-    /* property is used to insert content into pseudo-element created by ::after. In this case, we are inserting an asterisk (*) character. */
+    content: "*"; 
     color: red; 
     position: absolute;
 }
 
-/* read top to down so that's why I put  */
+
 
 form {
     margin-left: 2em;
@@ -230,41 +84,39 @@ form {
 
 
 .cook__btn {
+    background-color: #0fb9b1;
+    height: 30px;
+    width: 175px;
     margin-top: 10px;
     margin-bottom: 50px;
     padding-top: 6px;
     padding-bottom: 6px;
-    background-color: #0fb9b1;
     border-radius: 8px; 
-    /* 10% of 200px = 0.1 * 200px = 20px */
     border: none;
-    width: 175px;
-    height: 30px
 }
 .display__food {
+    background-color: rgba(225, 225, 225, .9);
+    opacity: 0.9;
     margin-top: 110px;
     margin-right: 80px;
     margin-bottom: 50px;
     margin-left: 130px;
-    width: 50%;
     height: 380px; 
-    background-color: rgba(225, 225, 225, .9);
+    width: 50%;
     font-family: 'Roboto', sans-serif;
     font-size: 20;
-    opacity: 0.9;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* stack div blocks on top of each other */
 }
 
 .clear__hidden {
     background-color: #95a5a6;
+    height: 35px;
+    width: 115px;
     border: none;
     border-radius: 8px;
-    width: 115px;
-    height: 35px
 }
 
 .clear__btn {
@@ -278,13 +130,13 @@ form {
 
 main {
     display: flex; 
-    justify-content: space-between;/* Spread items horizontally */
+    justify-content: space-between;
     align-items: center;
 }
 
 .pot__image {
-    width: 100px;
     height: 100%;
+    width: 100px;
     flex-direction: column;
     display: flex;
     justify-content: center
@@ -296,11 +148,11 @@ main {
     align-items: center;
 }
 
-.hidden {/*element selected by class */
+.hidden {
     display: none!important;
 }
 
-.prompt {
+.sentence {
     margin-top: 150px;
     text-align: center;
 }
