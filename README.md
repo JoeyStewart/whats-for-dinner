@@ -30,22 +30,22 @@ ______________________________________________________
 # What's for Dinner? 
 
 ### Abstract:
-[//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
+This application attempts to pick either a side, main dish, dessert, or all three option together from a set of three arrays. The meal presented can be cleared by pressing the "clear" button. 
 
 ### Installation Instructions:
-[//]: <> (What steps does a person have to take to get your app cloned down and running?)
+Download the github file to your local host. Once cloned, open the file in VScode and press Port:5500 on the bottom right of your screen. This should launch the application on your computer. 
 
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
 
 ### Context:
-[//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
+I was only able dedicate a total of 25 hours on this project. Priorities towards other commitments left me with less than satisfactory results.
 
 ### Contributors:
-[//]: <> (Who worked on this application? Link to their GitHubs.)
+https://github.com/JoeyStewart
 
 ### Learning Goals:
-[//]: <> (What were the learning goals of this project? What tech did you work with?)
+My learning goals were to better understand how the DOM works in connecting html, css, and javascript together and attempt to recreate the website presented. I was confident in my CSS construction, but how it connected to everything else still caused confusion. 
 
 ### Wins + Challenges:
-[//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
+I discovered I had an initial gross misunderstanding of CSS and html. Most of the work time was spent trying to relearn CSS and html to discover what my mistakes were. It turned out all of my misconceptions weren't far off from what they were supposed to be. But, they were enough to through my entire project sideways and leave me feeling in the dark. By late Saturday night, I was able to discover my main issue was that I had either the wrong html element present in my html, or too many classes listed within those elements. So different classes were overriding other classes unintentionally when I tried to implement them into my CSS. I eventually was able to simplify my html and add the right elements. Removing a few elements, replacing them with mostly section elements to correctly break up my code and use those as the class that would affect the whole block in the CSS. The only exception being the main element in my case. This has left me with little time for the JavaScript to be completed and left much of it still broken and in one case the CSS. I could not get the "cookpot" image to appear. Overall, this project is a failure in completion as well as having a complete omission of any branch creation. But, I did learn much. Including more CSS properties than I imagined possible. I'll have to take these lessons and apply them more apptly in the future.  
