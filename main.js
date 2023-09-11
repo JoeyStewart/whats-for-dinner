@@ -58,55 +58,55 @@ function getRandomIndex(arr) {
 }
 
 function getRandomItem(array) {
-    return array[getRandomIndex(array)];
+    return array[getRandomIndex(array)]
 }
 
 function getSentence(event, arr) {
-    event.preventDefault();
-    var randomDish = "";
+    event.preventDefault()
+    var randomDish = ""
 
     if (arr === side) {
-        randomDish = getRandomItem(side);
+        randomDish = getRandomItem(side)
     } else if (arr === mainDish) {
-        randomDish = getRandomItem(mainDish);
+        randomDish = getRandomItem(mainDish)
     } else if (arr === dessert) {
-        randomDish = getRandomItem(dessert);
+        randomDish = getRandomItem(dessert)
     } else if (arr === meals) {
-        var randomMainDish = getRandomItem(mainDish);
-        var randomSide = getRandomItem(side);
-        var randomDessert = getRandomItem(dessert);
-        randomDish = `${randomMainDish} with a side of ${randomSide} and ${randomDessert} for dessert!`;
+        var randomMainDish = getRandomItem(mainDish)
+        var randomSide = getRandomItem(side)
+        var randomDessert = getRandomItem(dessert)
+        randomDish = `${randomMainDish} with a side of ${randomSide} and ${randomDessert} for dessert!`
     }
 
     newText.innerHTML = `<section class="prompt">
         <h3>You should make</h3>
         <h1>${randomDish}!</h1>
-    </section>`;
+    </section>`
 }
-    
+
 function makeRandomDish(event) {
-    event.preventDefault(); 
+    event.preventDefault()
+
+    let array = null
+
     if (sideBtn.checked) {
-        getSentence(event, side)
-        clearPot(event)
-        clearBtn.classList.remove('hidden')
+        array = side
     } else if (mainBtn.checked) {
-        getSentence(event, mainDish)
-        clearPot(event)
-        clearBtn.classList.remove('hidden')
+        array = mainDish
     } else if (dessertBtn.checked) {
-        getSentence(event, dessert)
-        clearPot(event)
-        clearBtn.classList.remove('hidden')
+        array = dessert
     } else if (entireBtn.checked) {
-        getSentence(event, entireMeal)
+        array = entireMeal
         entireMeal.push(newText.innerHTML)
-        clearPot(event)
-        clearBtn.classList.remove('hidden')
     } else {
         potImage.classList.remove('hidden')
+        return
     }
- }
+
+    getSentence(event, selectedArray);
+    clearPot(event);
+    clearBtn.classList.remove('hidden');
+}
 
  function showSentence(event) {
     event.preventDefault()
