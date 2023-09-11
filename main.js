@@ -87,7 +87,7 @@ function getSentence(event, arr) {
 function makeRandomDish(event) {
     event.preventDefault()
 
-    var selectedArray = null
+    var array = null
 
     if (sideBtn.checked) {
         array = side
