@@ -80,7 +80,7 @@ function getSentence(event, arr) {
     
 function makeRandomDish(event) {
     event.preventDefault(); 
-    if (sideBtn === true) {
+    if (sideBtn.checked) {
         getSentence(event, side)
         clearPot(event)
         clearBtn.classList.remove('hidden')
@@ -104,8 +104,8 @@ function makeRandomDish(event) {
 
  function showSentence(event) {
     event.preventDefault()
-    potImage.classList.toggle('hidden')
-    newText.classList.toggle("hidden")
+    potImage.classList.add('hidden')
+    newText.classList.remove("hidden")
  }
 
 function clearMeal() {
