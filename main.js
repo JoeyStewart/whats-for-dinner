@@ -78,7 +78,7 @@ function getSentence(event, arr) {
         randomDish = `${randomMainDish} with a side of ${randomSide} and ${randomDessert} for dessert!`
     }
 
-    newText.innerHTML = `<section class="prompt">
+    newText.innerHTML = `<section class="sentence">
         <h1>You should make</h1>
         <h2>${randomDish}!</h2>
     </section>`
